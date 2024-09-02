@@ -62,7 +62,7 @@
 				Logging In, Please Wait....
 			</span>
 			{:else}
-				LOGIN
+				LOGIN----
 			{/if}
 		</button>
 	</div>
