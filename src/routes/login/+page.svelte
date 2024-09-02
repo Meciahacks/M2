@@ -7,10 +7,12 @@
 	let loading=false
 	let error = '';
 	async function login() {
+	console.log('****')
 	  try {		
 		loading=true
-		await pb.collection('users').authWithPassword(email, password);
+	
 
+		await pb.collection('users').authWithPassword(email, password);
 		goto('/entry');
 	} catch (err) {
 		console.log(err);
