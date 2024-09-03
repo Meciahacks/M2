@@ -6,12 +6,13 @@
 	let email = '',password = ''
 	let loading=false
 	let error = '';
-	async function login() {
+
+	async function login(event) {
+	event.preventDefault()
 	console.log('****')
+
 	  try {		
 		loading=true
-	
-
 		await pb.collection('users').authWithPassword(email, password);
 		goto('/entry');
 	} catch (err) {
