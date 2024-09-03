@@ -9,6 +9,7 @@
 
 	async function login(event) {
 	event.preventDefault()
+event.stopImmediatePropagation()
 	console.log('****')
 
 	  try {		
